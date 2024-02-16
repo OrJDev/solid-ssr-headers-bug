@@ -1,5 +1,4 @@
 import { getRequestEvent, isServer } from "solid-js/web";
-import { setResponseHeader } from "vinxi/http";
 
 const input = 1;
 export const testingFnGetRequestEvent = (
@@ -22,7 +21,6 @@ export const testingFnGetRequestEvent = (
     } else {
       console.log(`Server side can't set no response`);
     }
-    setResponseHeader("Solid-Testing", input);
   } else {
     console.log(`Client side testing function`);
   }
