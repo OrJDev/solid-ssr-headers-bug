@@ -1,7 +1,9 @@
 import { isServer } from "solid-js/web";
 import { setResponseHeader } from "vinxi/http";
 
-export const testingFnSetResponseHeader = (input: string) => {
+const input = 1;
+
+export const testingFnSetResponseHeader = () => {
   if (isServer) {
     console.log(`Server side testing function setting to ${input}`);
     setResponseHeader("Solid-Testing", input);

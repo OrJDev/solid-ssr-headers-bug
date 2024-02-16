@@ -1,7 +1,7 @@
 import { testingFnSetResponseHeader } from "~/utils/testingFnSetResponseHeader";
 
 export default function Home() {
-  testingFnSetResponseHeader("Hello from Home");
+  testingFnSetResponseHeader();
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
       <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
